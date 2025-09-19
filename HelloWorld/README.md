@@ -17,14 +17,6 @@ Instructions for using the software:
 
 The program is written in python, no build requirement is needed.
 
-## Useful Websites to Learn More
-
-I found these websites useful in developing this software:
-
-* [Website Title](Link)
-*
-*
-
 ## Future Work
 
 The following items I plan to fix, improve, and/or add to this project in the future:
