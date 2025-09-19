@@ -1,0 +1,11 @@
+C:\Users\adama\OneDrive\Desktop\BYUI Stuff\cse381-course\Assignments\AlgorithmLib\bin\Debug\net9.0\AlgorithmLib.deps.json
+C:\Users\adama\OneDrive\Desktop\BYUI Stuff\cse381-course\Assignments\AlgorithmLib\bin\Debug\net9.0\AlgorithmLib.dll
+C:\Users\adama\OneDrive\Desktop\BYUI Stuff\cse381-course\Assignments\AlgorithmLib\bin\Debug\net9.0\AlgorithmLib.pdb
+C:\Users\adama\OneDrive\Desktop\BYUI Stuff\cse381-course\Assignments\AlgorithmLib\obj\Debug\net9.0\AlgorithmLib.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\adama\OneDrive\Desktop\BYUI Stuff\cse381-course\Assignments\AlgorithmLib\obj\Debug\net9.0\AlgorithmLib.AssemblyInfoInputs.cache
+C:\Users\adama\OneDrive\Desktop\BYUI Stuff\cse381-course\Assignments\AlgorithmLib\obj\Debug\net9.0\AlgorithmLib.AssemblyInfo.cs
+C:\Users\adama\OneDrive\Desktop\BYUI Stuff\cse381-course\Assignments\AlgorithmLib\obj\Debug\net9.0\AlgorithmLib.csproj.CoreCompileInputs.cache
+C:\Users\adama\OneDrive\Desktop\BYUI Stuff\cse381-course\Assignments\AlgorithmLib\obj\Debug\net9.0\AlgorithmLib.dll
+C:\Users\adama\OneDrive\Desktop\BYUI Stuff\cse381-course\Assignments\AlgorithmLib\obj\Debug\net9.0\refint\AlgorithmLib.dll
+C:\Users\adama\OneDrive\Desktop\BYUI Stuff\cse381-course\Assignments\AlgorithmLib\obj\Debug\net9.0\AlgorithmLib.pdb
+C:\Users\adama\OneDrive\Desktop\BYUI Stuff\cse381-course\Assignments\AlgorithmLib\obj\Debug\net9.0\ref\AlgorithmLib.dll
