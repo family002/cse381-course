@@ -9,3 +9,4 @@ C:\Users\adama\OneDrive\Desktop\BYUI Stuff\cse381-course\Assignments\AlgorithmLi
 C:\Users\adama\OneDrive\Desktop\BYUI Stuff\cse381-course\Assignments\AlgorithmLib\obj\Debug\net9.0\refint\AlgorithmLib.dll
 C:\Users\adama\OneDrive\Desktop\BYUI Stuff\cse381-course\Assignments\AlgorithmLib\obj\Debug\net9.0\AlgorithmLib.pdb
 C:\Users\adama\OneDrive\Desktop\BYUI Stuff\cse381-course\Assignments\AlgorithmLib\obj\Debug\net9.0\ref\AlgorithmLib.dll
+C:\Users\adama\OneDrive\Desktop\BYUI Stuff\cse381-course\Assignments\AlgorithmLib\obj\Debug\net9.0\AlgorithmLib.sourcelink.json

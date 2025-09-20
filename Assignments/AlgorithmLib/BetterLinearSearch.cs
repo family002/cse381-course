@@ -23,6 +23,13 @@ public static class BetterLinearSearch
     */
     public static int Search<T>(List<T> data, T target) where T : IComparable<T>
     {
-        return 0;
+        for (int i = 0; i < data.Count; i++) // Iterates through the data provided
+        {
+            if (data[i].CompareTo(target) == 0) // Checks to see if the data is equal to the target
+            {
+                return i; // If found, stops the search and returns the index
+            }
+        }
+        return -1; //If not, returns -1
     }
 }

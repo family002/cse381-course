@@ -100,3 +100,4 @@ C:\Users\adama\OneDrive\Desktop\BYUI Stuff\cse381-course\Assignments\AlgorithmLi
 C:\Users\adama\OneDrive\Desktop\BYUI Stuff\cse381-course\Assignments\AlgorithmLibTest\obj\Debug\net9.0\AlgorithmLibTest.pdb
 C:\Users\adama\OneDrive\Desktop\BYUI Stuff\cse381-course\Assignments\AlgorithmLibTest\obj\Debug\net9.0\AlgorithmLibTest.genruntimeconfig.cache
 C:\Users\adama\OneDrive\Desktop\BYUI Stuff\cse381-course\Assignments\AlgorithmLibTest\obj\Debug\net9.0\ref\AlgorithmLibTest.dll
+C:\Users\adama\OneDrive\Desktop\BYUI Stuff\cse381-course\Assignments\AlgorithmLibTest\obj\Debug\net9.0\AlgorithmLibTest.sourcelink.json
