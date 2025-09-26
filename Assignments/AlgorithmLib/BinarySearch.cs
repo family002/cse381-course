@@ -39,13 +39,13 @@ public static class BinarySearch
     */
     public static int _Search<T>(List<T> data, T target, int first, int last) where T : IComparable<T>
     {
-        if (first > last)
+        if (first > last) //Base Case - If the value isn't found
         {
             return -1;
         }
-        int mid = (first + (last - first)) / 2;
-        int comparison = data[mid].CompareTo(target);
-        if (comparison == 0)
+        int mid = (first + (last - first)) / 2; // Detrmine the mid point - overflow safe
+        int comparison = data[mid].CompareTo(target); // create a comparison variable to reduce redundancy
+        if (comparison == 0) // Start comparisons and recursion
         {
             return mid;
         }
