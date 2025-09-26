@@ -39,7 +39,23 @@ public static class BinarySearch
     */
     public static int _Search<T>(List<T> data, T target, int first, int last) where T : IComparable<T>
     {
-        return 0;
+        if (first > last)
+        {
+            return -1;
+        }
+        int mid = (first + (last - first)) / 2;
+        int comparison = data[mid].CompareTo(target);
+        if (comparison == 0)
+        {
+            return mid;
+        }
+        if (comparison < 0)
+        {
+            return _Search(data, target, mid + 1, last);
+        }
+        else
+        {
+            return _Search(data, target, first, mid - 1);
+        }
     }
-
 }
