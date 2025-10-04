@@ -100,3 +100,10 @@ def plot_ft(fourier_transform_amplitudes, signal_rate):
 
 
 # Add your code here
+# times, amplitudes = gen_sig(256, [4, 7, 12])
+# plot_signal(times,amplitudes)
+# fft = FFT(amplitudes)
+# plot_ft (fft, 256)
+amplitudes, signal_rate = load_audio("Workshops/week2_workshop/Tones.wav")
+fft = FFT(amplitudes)
+plot_ft(fft, signal_rate)

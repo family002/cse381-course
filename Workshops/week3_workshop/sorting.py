@@ -4,22 +4,22 @@ import requests
 
 # Perform merge sort using the key lambda when 
 # doing comparisons. 
-def Sort(data):
-    _Sort(data, 0, len(data)-1)
+def Sort(data, key = lambda x : x):
+    _Sort(data, 0, len(data)-1, key)
 
 # Recursive call for merge sort.  Provide the key
 # lambda to all functions
-def _Sort(data, first, last):
+def _Sort(data, first, last, key):
     if first >= last:  # Item of size 1 is sorted
         return
     mid = (first+last) // 2
-    _Sort(data, first, mid)
-    _Sort(data, mid+1, last)
-    Merge(data, first, mid, last)
+    _Sort(data, first, mid, key)
+    _Sort(data, mid+1, last, key)
+    Merge(data, first, mid, last, key)
 
 # Merge two sorted lists together.  The key lambda
 # is needed here to do the comparison
-def Merge(data, first, mid, last):
+def Merge(data, first, mid, last, key):
     sa1 = data[first:mid+1]
     sa2 = data[mid+1:last+1]
     sa1Index = 0
@@ -31,7 +31,7 @@ def Merge(data, first, mid, last):
         elif sa2Index >= len(sa2):
             data[mIndex] = sa1[sa1Index]
             sa1Index += 1
-        elif sa1[sa1Index] <= sa2[sa2Index]:
+        elif key(sa1[sa1Index]) <= key(sa2[sa2Index]):
             data[mIndex] = sa1[sa1Index]
             sa1Index += 1
         else:
@@ -47,10 +47,15 @@ book_url = "https://raw.githubusercontent.com/benoitvallon/100-best-books/master
 book_list = requests.get(book_url).json()
 
 # Do your sorting here
-
-
+# Sort(book_list, lambda x : x["author"])
+# Sort(book_list, lambda x : x["title"])
+# Sort(book_list, lambda x : x["language"])
+# Sort(book_list, lambda x : x["year"])
+Sort(book_list, key = lambda x : (x["year"], x["author"]))
+Sort(book_list, key = lambda x : len(x))
 # Display the books
 for book in book_list:
+    
     print_book(book)
 
 
