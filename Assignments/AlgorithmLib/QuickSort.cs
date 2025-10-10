@@ -4,6 +4,10 @@
  *
 *  Instructions: Refer to W04 Prove: Assignment in Canvas for detailed instructions.
  */
+using System.Reflection;
+using System.Runtime.ExceptionServices;
+using System.Runtime.InteropServices;
+
 namespace AlgorithmLib;
 
 public static class QuickSort
@@ -22,7 +26,7 @@ public static class QuickSort
         // Start the recursion with the entire list
         _Sort(data, 0, data.Count-1);
     }
-    
+
     /* Recursively use quick sort to sort a sublist
      * defined by first and last.
      *
@@ -35,6 +39,14 @@ public static class QuickSort
      */
     public static void _Sort<T>(List<T> data, int first, int last) where T : IComparable<T>
     {
+        // Base Case & Recursion
+        if (first >= last)
+        {
+            return;
+        }
+        int pivot = Partition(data, first, last);
+        _Sort(data, first, pivot - 1);
+        _Sort(data, pivot + 1, last);
     }
     
     /* Partition a sublist by finding where a pivot belongs when sorted.  All
@@ -50,8 +62,29 @@ public static class QuickSort
      *  Outputs:
      *     The index of where the pivot was moved
      */
+
     public static int Partition<T>(List<T> data, int first, int last) where T : IComparable<T>
     {
-        return 0;
+        // Set the Pivot, LMGP, and begin iterating
+        T pivotData = data[last];
+        int lmgp = first;
+        for (int i = first; i < last; i++)
+        {
+            // If element is less than or equal to pivot, swap the element and the LMGP and move the pointer forward
+            if (data[i].CompareTo(pivotData) <= 0)
+            {
+                T temporary = data[i];
+                data[i] = data[lmgp];
+                data[lmgp] = temporary;
+                lmgp++;
+            }
+        }
+
+        // Sort the pivot in the correct place and return its index
+        T tempPivot = data[lmgp];
+        data[lmgp] = data[last];
+        data[last] = tempPivot;
+
+        return lmgp;
     }
 }
